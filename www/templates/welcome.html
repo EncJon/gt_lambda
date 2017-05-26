@@ -1,14 +1,14 @@
 <style>
-.scroll-content {
-  display: table !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-.scroll {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
+	.scroll-content {
+		display: table !important;
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.scroll {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
 
 	.lambdaLogo {
 		display: block;
@@ -130,10 +130,10 @@
 				<br>
 				<img class = "GTLogo" src="img/GammaTheta.png" alt="GammaTheta">
 				<br><br><br><!-- <br><br><br> -->
-				<button class="button-brother">MEMBER</button>
-			</br>
-			<button class="button-guest">Explore Gamma Theta</button>
+				<button class="button-brother" ng-click="memberLogin()">MEMBER</button>
+				</br>
+				<button class="button-guest" ng-click="guestMode()">Explore Gamma Theta</button>
+			</div>
 		</div>
-	</div>
-</ion-content>
+	</ion-content>
 </ion-view>

@@ -1,7 +1,12 @@
 angular.module('starter.controllers', [])
 
-.controller('WelcomeCtrl', function($scope) {
-
+.controller('WelcomeCtrl', function($scope, $state) {
+    $scope.memberLogin = function () {
+      $state.go("memberLogin");
+    };
+    $scope.guestMode = function () {
+      $state.go("guestMode");
+    };
 })
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
